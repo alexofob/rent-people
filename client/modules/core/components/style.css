@@ -1,45 +1,83 @@
-body {
-  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
-  padding: 10px 20px;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding:0px;
+    margin:0px;
 }
 
-header {
-  border-bottom: 1px solid #EAEAEA;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-}
-
-footer {
-  margin-top: 50px;
-  border-top: 1px solid #EAEAEA;
-  padding-top: 10px;
-  font-size: 12px;
-}
-
-.postlist li {
-  margin: 8px 0;
-}
-
-.postlist li a {
+.brand {
   text-decoration: none;
+  color: black !important;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px
 }
 
-.new-post input,
-.new-post textarea {
-  width: 350px;
-  outline: 0;
-  margin-bottom: 5px;
-  border: 1px solid #ddd;
-  font-size: 13px;
-  padding: 4px 6px;
+.flex-container {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
 }
 
-.new-post textarea {
-  height: 200px;
-}
-
-footer {
+.login-item {
   margin-top: 20px;
-  border-top: 1px solid #eee;
-  padding-top: 5px;
 }
+
+#forgot-password {
+  margin-left: 40px;
+}
+
+a:link {
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    text-decoration: none;
+    color: green;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.separator {
+    width: 100%;
+    border-bottom: 1px solid #60636a;
+    text-align: center;
+    height: 18px;
+    margin-bottom: 15px;
+}
+.separator span {
+    line-height: 15px;
+    padding: 0 10px;
+    background: white; /* Color of the element below */
+    display: inline-block;
+    margin-top: 10px;
+    color: #60636a;
+}
+
+@media(max-width:767px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+      display: inline !important;
+
+    }
+
+  }

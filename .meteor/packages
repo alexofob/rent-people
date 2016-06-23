@@ -21,3 +21,9 @@ reactive-dict
 audit-argument-checks
 check
 random
+accounts-password
+email
+accounts-facebook
+accounts-google
+service-configuration
+fortawesome:fontawesome

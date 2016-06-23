@@ -1,21 +1,17 @@
 import React from 'react';
-import Navigation from './navigation.jsx';
+import Header from '../containers/header';
+import Footer from './footer.jsx';
 
-const Layout = ({content = () => null }) => (
+const MainLayout = ({content = () => null }) => (
   <div>
-    <header>
-    <h1>Mantra Voice</h1>
-    <Navigation />
-    </header>
+    <Header  />
 
-    <div>
-    {content()}
+    <div className="flex-container">
+      {content()}
     </div>
 
-    <footer>
-    <small>Built with <a href='https://github.com/kadirahq/mantra'>Mantra</a> &amp; Meteor.</small>
-    </footer>
+    <Footer />
   </div>
 );
 
-export default Layout;
+export default MainLayout;

@@ -2,27 +2,28 @@ import React from 'react';
 import {mount} from 'react-mounter';
 
 import MainLayout from './components/main_layout.jsx';
+import Home from './components/home.jsx';
 import PostList from './containers/postlist';
-import Post from './containers/post';
+import ResetPassword from './containers/reset_password';
 import NewPost from './containers/newpost';
 
 export default function (injectDeps, {FlowRouter}) {
   const MainLayoutCtx = injectDeps(MainLayout);
 
   FlowRouter.route('/', {
-    name: 'posts.list',
+    name: 'home',
     action() {
       mount(MainLayoutCtx, {
-        content: () => (<PostList />)
+        content: () => (<Home />)
       });
     }
   });
 
-  FlowRouter.route('/post/:postId', {
-    name: 'posts.single',
-    action({postId}) {
+  FlowRouter.route('/reset-password/:token', {
+    name: 'reset-password',
+    action({token}) {
       mount(MainLayoutCtx, {
-        content: () => (<Post postId={postId}/>)
+        content: () => (<ResetPassword token={token}/>)
       });
     }
   });
@@ -35,4 +36,5 @@ export default function (injectDeps, {FlowRouter}) {
       });
     }
   });
+
 }

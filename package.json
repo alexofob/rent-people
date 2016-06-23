@@ -1,6 +1,6 @@
 {
-  "name": "mantra-demo",
-  "version": "0.2.1",
+  "name": "rent-people",
+  "version": "0.0.1",
   "scripts": {
     "lint": "eslint ./lib ./client ./server --ext .js --ext .jsx",
     "lintfix": "npm run lint -- --fix",
@@ -18,19 +18,31 @@
     "babel-root-slash-import": "1.x.x",
     "chai": "3.x.x",
     "enzyme": "^2.0.0",
-    "eslint": "1.10.x",
-    "eslint-plugin-react": "3.15.x",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^8.0.0",
+    "eslint-plugin-meteor": "^3.5.2",
+    "eslint-plugin-react": "^3.15.0",
+    "jsdom": "^8.0.4",
     "mocha": "2.x.x",
     "react-addons-test-utils": "^0.14.6",
-    "sinon": "1.17.x",
-    "jsdom": "^8.0.4"
+    "sinon": "1.17.x"
   },
   "dependencies": {
     "domready": "^1.0.8",
+    "formsy-material-ui": "^0.3.8",
+    "formsy-react": "^0.17.0",
     "mantra-core": "^1.2.0",
+    "material-ui": "^0.14.4",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
-    "react-mounter": "^1.0.0"
+    "react-mounter": "^1.0.0",
+    "react-redux": "^4.4.5",
+    "react-router-redux": "^4.0.2",
+    "react-tap-event-plugin": "^0.2.2",
+    "redux": "^3.5.1",
+    "redux-devtools": "^3.2.0",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.0.11"
   },
   "private": true
 }
